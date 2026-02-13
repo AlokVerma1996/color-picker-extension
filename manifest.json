@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Color Picker",
+  "description": "Pick any color from a webpage",
+  "version": "1.0",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/dropper.png"
+  }
+}

@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 250px;
+  padding: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+/* Pick Button */
+.pick-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  transition: background 0.15s ease, border 0.15s ease;
+}
+
+.pick-btn:hover {
+  background: #f8fafc;
+  border-color: #cbd5f5;
+}
+
+/* Color Preview */
+.color-box {
+  margin: 12px 0;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #f8fafc;
+}
+
+/* Rows */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #f1f5f9;
+  margin-bottom: 6px;
+}
+
+.row span {
+  color: #020617;
+}
+
+/* Copy Button */
+.row button {
+  border: none;
+  background: none;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: #475569;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 6px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.row button:hover {
+  background: #f1f5f9;
+  color: #020617;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #020617;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #f1f5f9;
+  margin: 10px 0;
+}
+
+.memory {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.memory-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #f1f5f9;
+  font-size: 11px;
+}
+
+.memory-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.memory-color {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+}
+
+.memory-hex {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.memory-delete {
+  cursor: pointer;
+  font-size: 12px;
+  color: #94a3b8;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.memory-delete:hover {
+  background: #f1f5f9;
+  color: #020617;
+}
+
+.memory-row {
+  cursor: pointer;
+}
+
+.memory-row:hover {
+  background: #f8fafc;
+}

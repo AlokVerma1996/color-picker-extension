@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>COLOR PICKER</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <button id="pick" class="pick-btn">PICK COLOR</button>
+
+    <div id="colorBox" class="color-box"></div>
+
+    <div class="row">
+      <span id="hex">HEX: —</span>
+      <button data-copy="hex">COPY</button>
+    </div>
+
+    <div class="row">
+      <span id="rgb">RGB: —</span>
+      <button data-copy="rgb">COPY</button>
+    </div>
+
+    <div class="row">
+      <span id="hsl">HSL: —</span>
+      <button data-copy="hsl">COPY</button>
+    </div>
+
+    <hr class="divider" />
+
+    <div id="memory" class="memory"></div>
+
+    <div id="toast" class="toast">COPIED</div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
