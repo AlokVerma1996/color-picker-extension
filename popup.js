@@ -90,7 +90,7 @@ function SAVE_TO_MEMORY(HEX) {
     COLORS = COLORS.filter(C => C !== HEX);
     COLORS.unshift(HEX);
 
-    if (COLORS.length > 10) COLORS.pop();
+    if (COLORS.length > 5) COLORS.pop();
 
     chrome.storage.local.set({ [STORAGE_KEY]: COLORS }, RENDER_MEMORY);
   });
